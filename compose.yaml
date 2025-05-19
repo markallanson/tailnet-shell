@@ -1,0 +1,15 @@
+services:
+  tnsh:
+    build: .
+    container_name: tnsh
+    hostname: tnsh
+    restart: unless-stopped
+    privileged: true 
+    environment:
+      - TS_AUTHKEY=${TS_AUTHKEY:-}
+    volumes:
+      - tailscale-data:/var/lib/tailscale 
+
+volumes:
+  tailscale-data:
+
