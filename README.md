@@ -9,7 +9,7 @@ git clone git@github.com:markallanson/tailnet-shell.git
 cd tnsh
 
 # Option 1: Authenticate with an authkey
-TS_AUTHKEY=tskey-your-auth-key-here docker compose up -d
+TS_AUTHKEY=YOUR_TS_AUTH_KEY_HERE docker compose up -d
 
 # Option 2: Authenticate via browser
 docker compose up -d
